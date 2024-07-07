@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
+
 html {
   width: 100%;
 }
@@ -11,7 +12,7 @@ html {
 header {
   width: 100%;
   height: 70px;
-  background-color: rgb(101, 0, 152);
+  background-color: #F20041;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,15 +40,16 @@ header ul li {
 }
 
 header ul li:hover a {
-  border-bottom: 3px solid rgb(67, 45, 78);
+  border-bottom: 3px solid #F7DB00;
 }
 
 main {
-  padding-inline: 50px;
+  padding-inline: 30px;
+  background-color: #efefef;
 }
 
 main #about {
-  padding-top: 30px;
+  padding-block: 30px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -55,4 +57,65 @@ main #about {
 main #about aside img {
   width: 100%;
   height: 100%;
+  padding-bottom: 20px;
+}
+
+main .header {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #F20041;
+  font-size: 1.2rem;
+}
+
+main #about aside p {
+  text-align: justify;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produtos .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e3e3;
+  padding-block: 10px;
+  min-width: 260px;
+  max-width: 360px;
+}
+
+.produtos .item img {
+  width: 100%;
+}
+
+.produtos .item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produtos .item .info .por {
+  font-size: 2rem;
+  color: rgb(22, 178, 22);
+}
+
+.produtos .item .info .a-vista {
+  font-size: .8rem;
+}
+
+.produtos .item .info button {
+  width: 100%;
+  height: 25px;
+  border: 0;
+  background-color: rgb(22, 178, 22);
+  color: #fff;
+}
+
+@media (min-width: 641px) {
+
 }
